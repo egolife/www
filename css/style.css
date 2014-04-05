@@ -390,7 +390,7 @@ h2 {
 
 .vacancy {
 	
-	
+	position: relative;
 	width: 820px;
 	margin: 0 auto;
 	padding-top: 33px;
@@ -400,6 +400,15 @@ h2 {
 	overflow: hidden;
 	padding-bottom: 19px;
 	border-bottom: 2px solid #e1e2e7;
+	position: relative;
+}
+
+.dates{
+	position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	bottom: 20px;
+	left: 0;
 }
 
 .vacancy-logo {
@@ -542,11 +551,19 @@ h2 {
 
 
 .vacancy-one .vacancy-logo{
-	margin-top: 38px;
+	/*margin-top: 38px;*/
+	vertical-align: middle;
+
 }
 
+.vacancy-one .vacancy-logo:before{
+	display: inline-block;
+	content: '';
+	height: 130px;
+	vertical-align: middle;
+}
 
-.vacancy-two .vacancy-logo {
+/*.vacancy-two .vacancy-logo {
 	margin-top: 45px;
 }
 
@@ -568,7 +585,7 @@ h2 {
 
 .vacancy-six .vacancy-logo {
 	margin-top: 59px;
-}
+}*/
 
 
 
@@ -933,6 +950,10 @@ footer a:nth-child(7) {
 	 
 }
 
+.row-logo>a {
+	margin-right: 28px;
+}
+
 .row-logo a img:first-child {
   transition:.3s opacity;
   position: relative;
@@ -961,7 +982,7 @@ footer a:nth-child(7) {
 .row-logo:after {
 	content: ' ';
 	position: absolute;
-	width: 800px;
+	width: 775px;
 	border-bottom: 2px solid #47525b;
 	top: 74px;
 	left: -26px;
@@ -1182,11 +1203,11 @@ select:active {
 }
 
 
-
+/*
 
 .row {
 	overflow: hidden;
-}
+}*/
 
 
 .row_sp_header {
@@ -1277,7 +1298,9 @@ select:active {
 	background-position: -112px -203px;
 }
 
-
+.jd, .requirements, .term{
+	margin-left: 20px;
+}
 
 .jd_logo, .req_logo, .term_logo {
 	background-image: url(../img/sprites.png);
@@ -1394,7 +1417,7 @@ li {
 	border-top: 18px solid transparent;
 	border-right: 30px solid #fff;
 	border-bottom: 18px solid transparent;
-	left: -18px;
+	left: -31px;
 	top: 28px;
 }
 
