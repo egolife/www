@@ -943,12 +943,14 @@ footer a:nth-child(7) {
 
 
 .row-logo {
+	overflow: visible !important;
 	margin-left: 100px;
 	padding-bottom: 17px;
 	position: relative;
 	padding-top: 28px;
 	 
 }
+
 
 .row-logo>a {
 	margin-right: 28px;
@@ -1203,11 +1205,11 @@ select:active {
 }
 
 
-/*
+
 
 .row {
 	overflow: hidden;
-}*/
+}
 
 
 .row_sp_header {
