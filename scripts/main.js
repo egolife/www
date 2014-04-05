@@ -29,6 +29,16 @@ $(document).ready(function(){
 	});
 	extendSearch.leanModal({overlay : 0.9, top: 200});
 	//slider(0,300,'review-slider', true, 1, true);
+	$(".clip").click(function(e){
+		e.preventDefault();
+		$("#uploadBtn").trigger("click");
+	});
+
+	$("input:file").change(function (){
+		var filename = $("#uploadBtn").val();
+		$("#uploadFile").val(filename);
+	});
+
 });
 
 
